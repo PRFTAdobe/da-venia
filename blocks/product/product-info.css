@@ -1,0 +1,95 @@
+.product-info-container {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  justify-content: space-between;
+}
+
+.product-info--header {
+  padding-block-end: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.product--pre-title {
+  font-size: 13px;
+}
+
+.product--title {
+  margin-block-start: 0;
+  font-size: 36px;
+}
+
+.product--price__discount-percentage {
+  color: var(--link-color);
+  font-size: .75em;
+  margin-right: 10px;
+}
+
+.product--price__discounted {
+  font-size: 28px;
+  margin-block-end: 0;
+}
+
+.product--price__listed {
+  font-size: 11px;
+  margin-block-start: 4px;
+}
+
+.product--price__listed s {
+  font-size: 1.5em;
+  margin-left: 5px;
+  ;
+}
+
+.product--ratings {
+  display: flex;
+  align-items: center;
+}
+
+
+.product--ratings__star-rating {
+  unicode-bidi: bidi-override;
+  color: #ccc;
+  font-size: 16px;
+  position: relative;
+  margin-left: 8px;
+  padding: 0;
+  inline-size: fit-content;
+}
+
+.product--ratings__star-rating>.product--ratings__fill {
+  color: #e7711b;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.product--ratings__star-rating>.product--ratings__empty {
+  padding: 0;
+  display: block;
+  z-index: 0;
+}
+
+.product--ratings__star-rating span {
+  display: inline-block;
+}
+
+.product--button__add-cart {
+  max-width: 160px;
+  padding-block: 10px;
+  margin-bottom: 8px;
+}
+
+.success-message {
+  visibility: hidden;
+  margin-top: 0;
+  color: var(--accent-color);
+}
+
+.success+.success-message {
+  visibility: visible;
+}

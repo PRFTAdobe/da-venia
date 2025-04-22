@@ -1,0 +1,21 @@
+.tags  ul {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.tags  ul >li>a{
+    text-decoration: underline;
+    text-decoration-color: var(--link-color);
+}
+
+.tags  ul >li+li:before{
+    content: "/";
+    padding: .5em;
+    color: #B79967;
+}

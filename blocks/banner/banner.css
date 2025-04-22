@@ -1,0 +1,117 @@
+/* block specific CSS goes here */
+
+main .section.banner-container {
+  margin-inline: var(--content-margin-inline);
+  margin-block: var(--content-margin-block);
+  padding-inline: 0;
+  text-align: left;
+  clear: both;
+}
+
+.banner {
+  position: relative;
+  min-height: 300px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+}
+.banner>div{
+  display: flex;
+  flex-direction: column;
+}
+.banner .banner-txt-col{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  width: 100%;
+  margin: 1rem;
+  flex: 1;
+}
+.banner-txt-col p{
+  font-size: calc(1.125rem * 0.75);
+  margin-bottom: calc((1rem - 1.125rem) + 1rem* 2 * 0.75);
+  line-height: calc(1.625rem * 0.75);
+  box-sizing: border-box;
+  font-family: Lato;
+  font-variant-ligatures: no-common-ligatures;
+  letter-spacing: .2px;
+  font-weight: 300;
+}
+.banner-txt-col h1 {
+  width: 100%;
+  padding-right: 1em;
+  box-sizing: border-box;
+  font-family: Lato;
+  font-variant-ligatures: no-common-ligatures;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 1em !important;
+  font-size: calc(2.375rem * 0.75);
+  margin-top: calc(1rem * 0.75);
+  line-height: calc(3rem * 0.75);
+}
+.banner-txt-col h4{
+  font-size: calc(1.125rem * 0.75);
+  margin-bottom: calc((1rem - 1.125rem) + 1rem* 2 * 0.75);
+  line-height: calc(1.625rem * 0.75);
+}
+.banner-txt-col h1::after {
+  position: absolute;
+  content: "";
+  left: -10vw;
+  bottom: 0;
+  width: 75%;
+  height: 3px;
+  background-color: #d1d3d4;
+}
+
+.banner-img-col{
+  margin-top: 32px;
+  margin-bottom: 0;
+  margin-left: 1em;
+  position: relative;
+  text-align: center;
+  flex: 1;
+}
+
+.banner-img-col img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  box-shadow: 4px 4px 8px rgba(0,0,0,.2);
+}
+
+.banner-img-col:after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  max-height: 620px;
+  top: -32%;
+  left: 41%;
+  width: 5px;
+  background-color: #b79967;
+  display: inline-block;
+  transform: rotate(20deg);
+}
+
+@media (min-width: 1220px){
+  .banner>div{
+    flex-direction: row;
+  }
+  .banner .banner-txt-col{
+    margin:0;
+  }
+  .banner-img-col:after {
+    height: 130%;
+    margin-top: 11%;
+  }
+}
+@media (min-width: 1500px){
+  .banner-img-col img {
+    min-width: 600px;
+  }
+}

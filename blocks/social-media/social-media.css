@@ -1,0 +1,28 @@
+.social-media  ul {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    height: auto;
+    max-width:100%;
+    margin: 0;
+    padding: 0;
+}
+.social-media ul img{
+    height: 32px;
+    width: 32px;
+}
+
+.social-media  ul >li+li:before{
+    content: "";
+    padding: .25em;
+}
+
+.sidebar .social-media ul img{
+    height: 32px;
+    width:32px;
+}
+
+.sidebar .social-media  ul >li+li:before{
+    content: "";
+    padding: .5em;
+}

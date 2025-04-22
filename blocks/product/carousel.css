@@ -1,0 +1,114 @@
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
+  margin: auto;
+
+}
+
+.carousel-container .carousel-item-container {
+  overflow: hidden;
+}
+
+.carousel-container .main-image-container {
+  display: flex;
+}
+
+.carousel-container .main-image-container img {
+  align-self: center;
+}
+
+.carousel-container .carousel-item-thumbnails {
+  display: none;
+}
+
+@media (min-width: 922px) {
+  .carousel-container .carousel-item-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 15px;
+    gap: 25px;
+    align-items: center;
+    grid-row: 2;
+    grid-column: 1/-1;
+  }
+}
+
+.carousel-container .carousel-item-thumbnails img {
+  display: block;
+  cursor: pointer;
+  padding: 3px;
+  border: 1px solid transparent;
+  object-fit: contain;
+}
+
+.carousel-container .carousel-item-thumbnails img.current-image {
+  border-color: var(--link-hover-color);
+}
+
+.carousel-item-chicklets {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  grid-column: 1/-1;
+  justify-content: center;
+}
+
+@media (min-width: 922px) {
+  .carousel-item-chicklets {
+    display: none;
+  }
+}
+
+.thumbnail-chicklet {
+  width: 5px;
+  height: 5px;
+  border: 1px solid var(--border-color);
+  background: white;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.thumbnail-chicklet.current {
+  border-color: var(--link-hover-color);
+  background-color: var(--link-hover-color);
+}
+
+
+.carousel-container .carousel-prev>div.arrow,
+.carousel-container .carousel-next>div.arrow {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+
+.carousel-container .carousel-prev>div.arrow:hover,
+.carousel-container .carousel-next>div.arrow:hover {
+  border-color: var(--link-hover-color);
+}
+
+.carousel-prev {
+  padding-left: 5px;
+}
+
+.carousel-container .arrow {
+  border: solid var(--border-color);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.carousel-container .arrow.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.carousel-container .arrow.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}

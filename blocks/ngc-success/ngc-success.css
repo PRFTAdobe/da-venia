@@ -1,0 +1,12 @@
+.ngc-success-container{
+    max-width: 986px;
+    margin: 82px auto;
+}
+.ngc-success-container .redirect-link a,.ngc-success-container .redirect-link a:hover{
+    color: #2954ff;
+}
+.order-num{
+    font-weight: 700;
+    font-size: 2em;
+    color: green;
+}

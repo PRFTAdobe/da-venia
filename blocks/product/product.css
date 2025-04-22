@@ -1,0 +1,29 @@
+@import url('./carousel.css');
+@import url('./product-info.css');
+
+.product-wrapper {
+  width: 1600px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.product {
+  min-height: 400px;
+  height: fit-content;
+}
+
+@media (min-width: 922px) {
+  .product {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .product>div {
+    padding-inline: 24px;
+  }
+
+}

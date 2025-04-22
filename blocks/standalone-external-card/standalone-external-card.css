@@ -1,0 +1,45 @@
+.standalone-external-card {
+  align-items: center;
+  background: #eee;
+  display: flex;
+  flex-direction: row;
+  margin-block-end: 1em;
+  padding-block-end: 1.5em;
+  padding-block-start: 1.2em;
+  padding-inline: 1.2em;
+  position: relative;
+
+}
+
+@media (min-width: 1280px) {
+.standalone-external-card .standalone-external-card--image {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -2.25em;
+    margin-right: 1em;
+    block-size: auto;
+    inline-size: 200px !important;
+    line-height: 0;
+    max-width: 280px;
+    min-width: 200px;
+    height: auto;
+}
+}
+
+.standalone-external-card-wrapper a{
+text-decoration: none !important;
+color: var(--text-color);
+}
+
+.standalone-external-card--body p {
+  margin: 0 0 1rem 0 ;
+  line-height: 1.8rem;
+}
+.standalone-external-card--body h5 {
+font-weight:600;
+}
+.standalone-external-card--body strong a{
+  text-decoration: none !important;
+  font-weight: bold !important;
+  color: var(--link-color);
+}

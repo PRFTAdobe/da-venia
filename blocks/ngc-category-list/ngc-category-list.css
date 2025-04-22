@@ -1,0 +1,18 @@
+.ngc-category-list ul{
+  list-style-type: none;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-block: 0;
+  padding-inline: 0;
+}
+
+.ngc-category-list li {
+  line-height: 1.3em;
+  list-style: none;
+  margin-block-end: 1rem;
+}
+
+.ngc-category-list li a{
+  text-decoration: underline;
+  font-weight: 400;
+}

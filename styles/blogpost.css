@@ -1,0 +1,101 @@
+/* section sidebar */
+.blogpost-container>.sidebar {
+  display: block !important;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  margin-top: 1em;
+}
+
+.sidebar>div+div {
+  border-block-start: 1px solid var(--border-color-light);
+  margin-block-start: 24px;
+  padding-block: .75em;
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+    padding-left: 18px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section>div.sidebar {
+    margin-top: 0;
+    border-top: none;
+    background-color: transparent;
+    width: calc(100% * 1/3);
+    padding-left: 2em !important;
+  }
+}
+
+/* blog post page */
+main .section.blogpost-container {
+  margin-inline: var(--content-margin-inline);
+  margin-block: var(--content-margin-block);
+  padding-inline: 0;
+  text-align: left;
+  clear: both;
+  display: flex;
+  justify-content: center;
+}
+
+.blogpost-container>.main-content {
+  display: flex !important;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Lato";
+  font-size: 1.2rem;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 300;
+  justify-content: center;
+  letter-spacing: .2px;
+  line-height: 1.9rem;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+  width: 100%;
+}
+
+.main-content>.default-content-wrapper {
+  inline-size: 100%;
+  padding-block-end: 39px;
+}
+
+.main-content>.default-content-wrapper::last-child {
+  border-bottom: 1px solid var(--border-color-light);
+}
+
+.blogpost-container .main-content a {
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+@media (min-width: 1280px) {
+  .blogpost-container>.main-content {
+    letter-spacing: .1px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding-right: 2em;
+    border-right: 1px solid var(--border-color);
+  }
+}
+
+@media (max-width: 1279px) {
+  main .section.blogpost-container {
+    display: block;
+    padding-bottom: 2.188rem;
+  }
+
+  .sidebar {
+    padding-left: 0;
+  }
+}
+
+@media (max-height: 653px) {
+  .main-content {
+    font-size: calc(1rem * 0.75);
+    margin-bottom: calc((1rem - 1rem) + 1rem* 2 * 0.75);
+    line-height: calc(1.5rem * 0.75);
+  }
+}

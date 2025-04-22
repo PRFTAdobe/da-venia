@@ -1,0 +1,38 @@
+.ngc-author-card section {
+  align-items: center;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  margin-block-end: 2em;
+  margin-block-start: 3em;
+  padding-block-end: 1.5em;
+  padding-block-start: 1.2em;
+  padding-inline: 1.2em;
+}
+
+.ngc-author-card--image>a {
+  float: left;
+}
+
+.ngc-author-card .ngc-author-card--image {
+  box-shadow: 4px 4px 8px rgb(0 0 0 / 20%);
+  block-size: auto;
+  inline-size: 200px !important;
+  line-height: 0;
+  margin-block-end: 1em;
+  margin-block-start: -2.25em;
+  margin-inline-start: 8px;
+}
+
+.ngc-author-card--body p {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.4rem;
+}
+
+.ngc-author-card .button-container a {
+  background-color: transparent;
+  color: var(--link-color);
+  text-decoration: none;
+}

@@ -1,0 +1,6 @@
+<svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" alt="" aria-hidden="true">
+  <rect width="32" height="32" fill="rgba(183,153,103,0)"></rect>
+  <g id="b" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+    <path d="M20.1,6c.35,2.98,2.01,4.75,4.9,4.94v3.35c-1.68,.16-3.14-.38-4.85-1.42v6.27c0,7.96-8.68,10.45-12.17,4.74-2.24-3.67-.87-10.11,6.32-10.37v3.53c-.55,.09-1.13,.23-1.67,.41-1.6,.54-2.51,1.56-2.25,3.34,.48,3.43,6.77,4.44,6.25-2.25V6.01h3.47Z" fill-rule="evenodd"></path>
+  </g>
+</svg>
